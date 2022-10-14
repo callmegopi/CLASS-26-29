@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="addSkill()">Add Skill</button>
+    <button onclick="addCompany()">Add Company</button>
+    <button onclick="addNumber()">Add Number</button>
+    <button onclick="addState()">Add State</button>
+    <button onclick="addEducation()">Add Education</button>
+    <button onclick="addSupport()">Add support</button>
+    <button onclick="addInstitude()">Add Institude</button>
+    <button onclick="deleteExperience()">Delete Experience</button>
+    <script>
+        var person = {
+            fname: "Teja",
+            lname: "kiran",
+            age: 25,
+            lookingforJob: true,
+            experience: null
+        }
+        console.log(person)
+
+        function addSkill() {
+            person.skill = "UI Developer"
+            console.log(person)
+        }
+
+        function addCompany() {
+            person["company"] = "DELL"
+            console.log(person)
+        }
+
+        function addNumber() {
+            person.Number = 9441587117
+            console.log(person)
+        }
+
+        function addState() {
+            person["State"] = "Telangana"
+            console.log(person)
+        }
+        
+        function addEducation() {
+            person.Education = "Open Degree"
+            console.log(person)
+        }
+
+        function addSupport() {
+            person["Back-Support"] = null
+            console.log(person)
+        }
+
+        function addInstitude() {
+            person["Institude-10kcoders"] = true
+            console.log(person)
+        }
+
+        function deleteExperience() {
+            delete person.experience
+            console.log(person)
+        }
+
+    </script>
+</body>
+</html>

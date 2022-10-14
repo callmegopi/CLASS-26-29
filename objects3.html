@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Person {
+            constructor(fname, lname, email) {
+                this.fname = fname
+                this.lname = lname
+                this.email = email
+            }
+        }
+
+        var person = new Person("ramu","krishna","ramu@gmail.com");
+        console.log(person)
+
+        class Employee {
+            constructor(ename, dept, role, experience, salary, promotion) {
+                this.ename = ename;
+                this.dept = dept;
+                this.role = role;
+                this.experience = experience
+                this.salary = salary
+                this.promotion = promotion
+            }
+        }
+
+        var employee = new Employee("Hari","Irrigation","AE","5year", 50000, null);
+        console.log(employee)
+
+    </script>
+</body>
+</html>
